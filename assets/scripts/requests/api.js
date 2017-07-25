@@ -25,14 +25,19 @@ const getUsersShows = () => {
 }
 
 const addShow = (data) => {
+  console.log('this is addshow data' + data)
+  console.log('this is the user ', store.user)
   return $.ajax({
-    url: config.localhost + 'my-shows/',
+    url: config.localhost + 'shows_users',
     method: 'POST',
     headers: {
       Authorization: 'Token token=' + store.user.token
     },
     data: {
-      'show_id': data
+      'shows_user':
+      {'user_id': store.user.id,
+        'show_id': data
+      }
     }
   }
 )
