@@ -1,0 +1,12 @@
+{{#each shows.shows}}
+<div data-show-id="{{id}}">
+  <h2> Artist: {{artist}}</h2>
+  <h3> Date: {{date}} </h3>
+  <ul>
+    <li>Start Time: {{start_time}} </li>
+    <li>End Time: {{end_time}} </li>
+  </ul>
+
+<button id={{id}} class="add-show-button"> Add Show </button></div>
+
+{{/each}}

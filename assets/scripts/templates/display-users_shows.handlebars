@@ -1,0 +1,14 @@
+{{#each shows}}
+
+<h2> Artist: {{artist}}</h2>
+<h3> Date: {{date}} </h3>
+<ul>
+  <li>Start Time: {{start_time}} </li>
+  <li>End Time: {{end_time}} </li>
+</ul>
+
+<button id={{id}} class="remove-show-button"> Remove Show</button>
+
+<button id={{id}} class="attended-button"> Attended?</button>
+
+{{/each}}

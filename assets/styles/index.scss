@@ -1,0 +1,46 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+html, body {
+text-align: center;
+}
+p {text-align: left;}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #C1C1C1;
+	text-align: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+ input {
+   color: #000022;
+ }
+
+
+ li {
+   list-style: none;
+ }
+
+ .content{
+   color: #ffffff;
+ }
+
+.add-show-button{
+color: black
+}
+
+.remove-show-button{
+color: black;
+}
+
+.attended-button{
+color: black;
+}
+
+#needsSignIn {
+  display: none;
+}
