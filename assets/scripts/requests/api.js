@@ -45,7 +45,7 @@ const addShow = (data) => {
 
 const removeShow = (data) => {
   return $.ajax({
-    url: config.localhost + 'my-shows/',
+    url: config.localhost + 'shows_users/',
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token

@@ -1,19 +1,15 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-html, body {
-text-align: center;
-}
-p {text-align: left;}
-
 body {
-	margin: 0;
-	padding: 0;
-	background: #C1C1C1;
-	text-align: left;
+  // background: url('./images/cdjs.jpg') no-repeat;
+  // background-size: auto;
+//   background: url('./images/cdjs.jpg') no-repeat center center fixed;
+// background-size: cover;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #FFFFFF;
+  background-color: #808080;
 }
 
  input {
@@ -39,6 +35,10 @@ color: black;
 
 .attended-button{
 color: black;
+}
+
+#bodydiv{
+text-align: center;
 }
 
 #needsSignIn {

@@ -17,6 +17,7 @@ const addShowSuccess = (data) => {
 }
 
 const getUsersShowsSuccess = (data) => {
+  console.log(data)
   const displayUsersShows = require('../templates/display-users_shows.handlebars')
   $('#content').html(displayUsersShows({
     shows: data.shows
