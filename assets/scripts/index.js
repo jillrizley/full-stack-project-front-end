@@ -6,7 +6,7 @@ const requestsEvents = require('./requests/events')
 
 $(document).on('click', '.add-show-button', function () {
   const data = $(this).closest('div').data('show-id')
-  requestsEvents.onAddShow(data);
+  requestsEvents.onAddShow(data)
 })
 
 $(document).on('click', '.remove-show-button', function () {
@@ -43,7 +43,4 @@ $(() => {
   $('.change-password-btn').on('click', function () {
     $('#change-password-modal').modal('hide')
   })
-  // $('.update-player-button').on('click', function(){
-  //   $('#update-player-modal').modal('hide');
-  // });
 })

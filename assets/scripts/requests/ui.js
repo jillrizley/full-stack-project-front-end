@@ -13,11 +13,11 @@ const removeShowSuccess = (data) => {
 }
 
 const addShowSuccess = (data) => {
-  console.log('addShowSuccess data = ' + data)
+  console.log('addShowSuccess data = ', data)
 }
 
 const getUsersShowsSuccess = (data) => {
-  console.log(data)
+  console.log('shows_users data', data)
   const displayUsersShows = require('../templates/display-users_shows.handlebars')
   $('#content').html(displayUsersShows({
     shows: data.shows

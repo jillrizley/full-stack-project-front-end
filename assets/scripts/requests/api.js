@@ -16,7 +16,7 @@ const getAllShows = () => {
 
 const getUsersShows = () => {
   return $.ajax({
-    url: config.localhost + 'my-shows',
+    url: config.localhost + 'shows_users',
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -44,14 +44,12 @@ const addShow = (data) => {
 }
 
 const removeShow = (data) => {
+  console.log(data)
   return $.ajax({
-    url: config.localhost + 'shows_users/',
+    url: config.localhost + 'shows_users/' + data,
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token
-    },
-    data: {
-      'show_id': data
     }
   })
 }

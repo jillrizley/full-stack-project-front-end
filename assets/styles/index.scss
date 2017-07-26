@@ -2,12 +2,12 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
 body {
-  // background: url('./images/cdjs.jpg') no-repeat;
-  // background-size: auto;
-//   background: url('./images/cdjs.jpg') no-repeat center center fixed;
-// background-size: cover;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 13px;
+  background: url('./images/cdjs.jpg') no-repeat;
+  background-size: auto;
+  background: url('./images/cdjs.jpg') no-repeat center center fixed;
+background-size: cover;
+	font-family: "Trebuchet MS", Arial;
+	font-size: 12px;
 	color: #FFFFFF;
   background-color: #808080;
 }
@@ -21,23 +21,23 @@ body {
    list-style: none;
  }
 
- .content{
+ .content {
    color: #ffffff;
  }
 
-.add-show-button{
+.add-show-button {
 color: black
 }
 
-.remove-show-button{
+.remove-show-button {
 color: black;
 }
 
-.attended-button{
+.attended-button {
 color: black;
 }
 
-#bodydiv{
+#bodydiv {
 text-align: center;
 }
 
