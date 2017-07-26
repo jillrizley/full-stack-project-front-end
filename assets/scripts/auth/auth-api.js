@@ -4,9 +4,9 @@ const config = require('../config')
 const store = require('../store')
 
 const signUp = function (data) {
-  console.log(config.localhost)
+  console.log(config.apiOrigins)
   return $.ajax({
-    url: config.localhost + 'sign-up',
+    url: config.apiOrigins + 'sign-up',
     method: 'POST',
     data
   })
@@ -15,10 +15,10 @@ const signUp = function (data) {
 const signIn = function (data) {
   console.log('signIn is running!!')
   console.log('Data: ', data)
-  console.log('URL: ', config.localhost)
+  console.log('URL: ', config.apiOrigins)
 
   return $.ajax({
-    url: config.localhost + 'sign-in',
+    url: config.apiOrigins + 'sign-in',
     method: 'POST',
     data
   })
@@ -26,7 +26,7 @@ const signIn = function (data) {
 
 const changePassword = function (data) {
   return $.ajax({
-    url: config.localhost + 'change-password/' + store.user.id,
+    url: config.apiOrigins + 'change-password/' + store.user.id,
     method: 'PATCH',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -37,7 +37,7 @@ const changePassword = function (data) {
 
 const signOut = function () {
   return $.ajax({
-    url: config.localhost + 'sign-out/' + store.user.id,
+    url: config.apiOrigins + 'sign-out/' + store.user.id,
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token
