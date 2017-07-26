@@ -2,7 +2,7 @@
 
 URL to my app: https://jillrizley.github.io/full-stack-front-end
 
-Back end repo: https://github.com/jillrizley/project-two-template
+Back end repo: https://github.com/jillrizley/full-stack-project-back-end
 
 **Technologies Used:** HTML, CSS, Javascript, Ruby, Rails
 
