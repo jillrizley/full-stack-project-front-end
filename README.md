@@ -1,8 +1,8 @@
-URL to my app:
+URL to my app: https://jillrizley.github.io/full-stack-front-end
 
 Technologies Used: HTML, CSS, Javascript, Ruby, Rails
 
-Link to wireframe:
+Link to wireframe: https://wireframe.cc/emrijr
 
 User Stories
 - As a user, I want to be able to login to see my shows list.
