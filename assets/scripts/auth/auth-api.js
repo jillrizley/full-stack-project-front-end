@@ -4,8 +4,9 @@ const config = require('../config')
 const store = require('../store')
 
 const signUp = function (data) {
+  console.log(config.apiOrigin)
   return $.ajax({
-    url: 'http://localhost:4741/sign-up/',
+    url: config.apiOrigin + 'sign-up/',
     method: 'POST',
     data
   })
@@ -13,7 +14,7 @@ const signUp = function (data) {
 
 const signIn = function (data) {
   return $.ajax({
-    url: 'http://localhost:4741/sign-in',
+    url: config.apiOrigin + 'sign-in/',
     method: 'POST',
     data
   })
@@ -21,7 +22,7 @@ const signIn = function (data) {
 
 const changePassword = function (data) {
   return $.ajax({
-    url: 'http://localhost:4741/change_password' + store.user.id,
+    url: config.apiOrigin + 'change-password/' + store.user.id,
     method: 'PATCH',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -32,7 +33,7 @@ const changePassword = function (data) {
 
 const signOut = function () {
   return $.ajax({
-    url: 'http://localhost:4741/signOut' + store.user.id,
+    url: config.apiOrigin + 'sign-out/' + store.user.id,
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token

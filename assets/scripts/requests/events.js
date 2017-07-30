@@ -39,5 +39,4 @@ module.exports = {
   onRemoveShow,
   onGetAllShows,
   onGetUsersShows
-  // onUpdatePlayer,
 }

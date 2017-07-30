@@ -6,7 +6,7 @@ const store = require('../store')
 const getAllShows = () => {
   console.log(store.user.token)
   return $.ajax({
-    url: 'http://localhost:4741/shows',
+    url: config.apiOrigin + 'shows',
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -16,7 +16,7 @@ const getAllShows = () => {
 
 const getUsersShows = () => {
   return $.ajax({
-    url: 'http://localhost:4741/shows_users',
+    url: config.apiOrigin + 'shows_users',
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -28,7 +28,7 @@ const addShow = (data) => {
   console.log('this is addshow data' + data)
   console.log('this is the user ', store.user)
   return $.ajax({
-    url: 'http://localhost:4741/shows_users',
+    url: config.apiOrigin + 'shows_users',
     method: 'POST',
     headers: {
       Authorization: 'Token token=' + store.user.token
