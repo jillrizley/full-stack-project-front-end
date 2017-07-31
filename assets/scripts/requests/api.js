@@ -27,6 +27,9 @@ const getUsersShows = () => {
 const addShow = (data) => {
   console.log('this is addshow data' + data)
   console.log('this is the user ', store.user)
+
+  const buttonID = event.target.id
+  $(`#${buttonID}`).hide()
   return $.ajax({
     url: config.apiOrigin + 'shows_users',
     method: 'POST',
@@ -34,13 +37,12 @@ const addShow = (data) => {
       Authorization: 'Token token=' + store.user.token
     },
     data: {
-      'shows_user':
-      {'user_id': store.user.id,
+      'shows_user': {
+        'user_id': store.user.id,
         'show_id': data
       }
     }
-  }
-)
+  })
 }
 
 const removeShow = (data) => {
@@ -59,6 +61,4 @@ module.exports = {
   getUsersShows,
   addShow,
   removeShow
-  // createPlayer,
-  // updatePlayer,
 }
