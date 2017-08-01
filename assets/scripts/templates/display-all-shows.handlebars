@@ -1,14 +1,12 @@
 {{#each shows.shows}}
 <div data-show-id="{{id}}">
-  <h2> Artist: {{artist}}</h2>
-  <h3> Date: {{date}} </h3>
-  <ul>
-    <li>Start Time: {{start_time}} </li>
-    <li>End Time: {{end_time}} </li>
-    <li>Venue: {{venue}} </li>
-
-  </ul>
+  <h1> Artist: {{artist}}, Date: {{date}} </h1>
+    <h3>Start Time: {{start_time}} PM</h3>
+    <h3>End Time: {{end_time}} AM</h3>
+    <h3>Venue: {{venue}} </h3>
 
 <button id={{id}} class="add-show-button"> Add Show </button></div>
+</br>
+<hr>
 
 {{/each}}

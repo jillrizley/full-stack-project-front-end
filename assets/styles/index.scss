@@ -18,11 +18,13 @@ background-size: cover;
 
 
  li {
-   list-style: none;
+   list-style: bold;
+  font-size: 16px;
  }
 
  .content {
    color: #ffffff;
+  //  font-size: 20px;
  }
 
 .add-show-button {
