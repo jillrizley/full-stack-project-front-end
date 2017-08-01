@@ -46,7 +46,9 @@ const addShow = (data) => {
 }
 
 const removeShow = (data) => {
-  console.log(data)
+  const buttonID = event.target.id
+  $(`#${buttonID}`).hide()
+  console.log('Show removed!')
   return $.ajax({
     url: config.apiOrigin + 'remove_show/' + data,
     method: 'DELETE',
