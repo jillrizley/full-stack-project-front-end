@@ -9,6 +9,11 @@ $(document).on('click', '.add-show-button', function () {
   requestsEvents.onAddShow(data)
 })
 
+$(document).on('click', '.attended-button', function () {
+  console.log('hello')
+  requestsEvents.onAttendedShow(this.id)
+})
+
 $(document).on('click', '.remove-show-button', function () {
   requestsEvents.onRemoveShow(this.id)
 })

@@ -45,6 +45,19 @@ const addShow = (data) => {
   })
 }
 
+const attendedShow = (data) => {
+  const buttonID = event.target.id
+  $(`#${buttonID}`).hide()
+  console.log('Show Attended!')
+  return $.ajax({
+    url: config.apiOrigin + 'attended_show/' + data,
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+
 const removeShow = (data) => {
   const buttonID = event.target.id
   $(`#${buttonID}`).hide()
@@ -62,5 +75,6 @@ module.exports = {
   getAllShows,
   getUsersShows,
   addShow,
+  attendedShow,
   removeShow
 }

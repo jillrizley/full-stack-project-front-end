@@ -8,6 +8,10 @@ const failure = (error) => {
   console.error(error)
 }
 
+const attendedShow = (data) => {
+  console.log(data)
+}
+
 const removeShowSuccess = (data) => {
   console.log(data)
 }
@@ -38,5 +42,6 @@ module.exports = {
   getAllShowsSuccess,
   addShowSuccess,
   getUsersShowsSuccess,
+  attendedShow,
   removeShowSuccess
 }

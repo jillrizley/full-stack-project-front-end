@@ -22,6 +22,12 @@ const onAddShow = function (showId) {
     .fail(ui.failure)
 }
 
+const onAttendedShow = function (data) {
+  api.attendedShow(data)
+    .done(ui.AttendedSuccess)
+    .fail(ui.failure)
+}
+
 const onRemoveShow = function (data) {
   api.removeShow(data)
     .done(ui.removeShowSuccess)
@@ -36,6 +42,7 @@ const addHandlers = () => {
 module.exports = {
   addHandlers,
   onAddShow,
+  onAttendedShow,
   onRemoveShow,
   onGetAllShows,
   onGetUsersShows
