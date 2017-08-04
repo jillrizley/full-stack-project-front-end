@@ -4,7 +4,6 @@ const config = require('../config')
 const store = require('../store')
 
 const getAllShows = () => {
-  console.log(store.user.token)
   return $.ajax({
     url: config.apiOrigin + 'shows',
     method: 'GET',
@@ -25,9 +24,6 @@ const getUsersShows = () => {
 }
 
 const addShow = (data) => {
-  console.log('this is addshow data' + data)
-  console.log('this is the user ', store.user)
-
   const buttonID = event.target.id
   $(`#${buttonID}`).hide()
   return $.ajax({
@@ -48,7 +44,6 @@ const addShow = (data) => {
 const attendedShow = (data) => {
   const buttonID = event.target.id
   $(`#${buttonID}`).hide()
-  console.log('Show Attended!')
   return $.ajax({
     url: config.apiOrigin + 'attended_show/' + data,
     method: 'PATCH',
@@ -61,7 +56,6 @@ const attendedShow = (data) => {
 const removeShow = (data) => {
   const buttonID = event.target.id
   $(`#${buttonID}`).hide()
-  console.log('Show removed!')
   return $.ajax({
     url: config.apiOrigin + 'remove_show/' + data,
     method: 'DELETE',

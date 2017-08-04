@@ -7,6 +7,9 @@
 
 <button id={{id}} class="remove-show-button"> Remove Show</button>
 
+{{#if attended}}
+<button id={{id}} class="attended-button-hidden"> Attended</button>
+{{else}}
 <button id={{id}} class="attended-button"> Attended?</button>
-
+{{/if}}
 {{/each}}

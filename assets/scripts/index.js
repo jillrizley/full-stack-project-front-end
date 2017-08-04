@@ -10,7 +10,6 @@ $(document).on('click', '.add-show-button', function () {
 })
 
 $(document).on('click', '.attended-button', function () {
-  console.log('hello')
   requestsEvents.onAttendedShow(this.id)
 })
 

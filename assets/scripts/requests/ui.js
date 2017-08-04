@@ -9,7 +9,7 @@ const failure = (error) => {
 }
 
 const attendedShow = (data) => {
-  console.log(data)
+  console.log('attendedShow data = ', data)
 }
 
 const removeShowSuccess = (data) => {
