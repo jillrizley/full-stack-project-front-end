@@ -5,7 +5,7 @@ const store = require('../store')
 
 const getAllShows = () => {
   return $.ajax({
-    url: config.apiOrigins + 'shows',
+    url: config.apiOrigin + 'shows',
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -15,7 +15,7 @@ const getAllShows = () => {
 
 const getUsersShows = () => {
   return $.ajax({
-    url: config.apiOrigins + 'shows_users',
+    url: config.apiOrigin + 'shows_users',
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -27,7 +27,7 @@ const addShow = (data) => {
   const buttonID = event.target.id
   $(`#${buttonID}`).hide()
   return $.ajax({
-    url: config.apiOrigins + 'shows_users',
+    url: config.apiOrigin + 'shows_users',
     method: 'POST',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -45,7 +45,7 @@ const attendedShow = (data) => {
   const buttonID = event.target.id
   $(`#${buttonID}`).hide()
   return $.ajax({
-    url: config.apiOrigins + 'attended_show/' + data,
+    url: config.apiOrigin + 'attended_show' + data,
     method: 'PATCH',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -57,7 +57,7 @@ const removeShow = (data) => {
   const buttonID = event.target.id
   $(`#${buttonID}`).hide()
   return $.ajax({
-    url: config.apiOrigins + 'remove_show/' + data,
+    url: config.apiOrigin + 'remove_show' + data,
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token
