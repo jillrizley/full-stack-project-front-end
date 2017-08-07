@@ -45,7 +45,7 @@ const attendedShow = (data) => {
   const buttonID = event.target.id
   $(`#${buttonID}`).hide()
   return $.ajax({
-    url: config.apiOrigin + 'attended_show' + data,
+    url: config.apiOrigin + 'attended_show/' + data,
     method: 'PATCH',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -57,7 +57,7 @@ const removeShow = (data) => {
   const buttonID = event.target.id
   $(`#${buttonID}`).hide()
   return $.ajax({
-    url: config.apiOrigin + 'remove_show' + data,
+    url: config.apiOrigin + 'remove_show/' + data,
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token
