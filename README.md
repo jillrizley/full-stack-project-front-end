@@ -1,6 +1,6 @@
 # My Concert Calendar
 
-URL to my app: https://jillrizley.github.io/full-stack-front-end
+URL to my app: https://jillrizley.github.io/full-stack-project-front-end
 
 Back end repo: https://github.com/jillrizley/full-stack-project-back-end
 
