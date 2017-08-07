@@ -1,4 +1,4 @@
-# My Show Calendar
+# My Concert Calendar
 
 URL to my app: https://jillrizley.github.io/full-stack-front-end
 
@@ -21,5 +21,3 @@ I was pretty excited about this project. I liked being able to create something 
 My original plan was to have the back end started and tested by Day 2, front end and javascript worked on Day 3+4, have everything working together flawlessly by Day 5, and spend Day 6 deploying, setting up this readme and working on the visual aspect.
 
 I began filling out the back-end, using some examples from class and information from a past project, tic-tac-toe for the authentication for sign-in features. I made good progress and mostly stuck to my schedule for the continuation of the project time, but got stuck the night of Day 5 and spent most of day 6 fixing that bug. I continued to have a difficult time making things work how I wanted.
-
-Unsolved: Cannot remove show, and cannot click attended. Need to do a lot of work to fix these issues and others deeper in the code.
